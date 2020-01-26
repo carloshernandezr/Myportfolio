@@ -147,6 +147,9 @@ a.socialIcon:hover, .socialHoverClass {
 
 h1{
 text-shadow: 0 0 24px black;}
+#ptext{
+	text-shadow: 0 0 24px black;
+}
 
 .custom-height-img{
 	height: 150px  !important;
