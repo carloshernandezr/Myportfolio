@@ -1,21 +1,14 @@
-/* .jumbotron {
-    color: white;
-    background-image: url("/Assets/image/me\ cut.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-  } */
-
-
+#title2{
+   margin-top: 55px !important;
+ }
 
 
   .bg{
     background-image:url('/Assets/image/desk.jpg');
     background-size: cover;
     background-position: center;
-    height: 460px;
-    width: 100%;
+    /* height: 460px;
+    width: 100%; */
     position: relative;
     overflow: hidden;
 }
@@ -35,6 +28,46 @@
     height: 500px ;
 
   }
+
+
+/*3*/
+
+
+
+
+
+
+.bg2{
+  background-color:darkgray;
+ 
+  /* //background-size: cover;
+  background-position: center; */
+  /* height: 4600px;
+  width: 1100%; */
+  position: relative;
+  overflow: hidden;
+}
+.bg2:after{
+  content: '';
+  background-color: #fff;
+  display: block;
+  width: 120%;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -90px;
+  transform: rotate(-4deg);
+}
+#main2{
+  height: 100% ;
+
+}
+
+
+
+
+
  /* social media */
  ul.social-network {
 	list-style: none;
@@ -53,7 +86,7 @@ ul.social-network li {
 .social-network a.icoFacebook:hover {
 	background-color:#3B5998;
 }
-.social-network a.icoTwitter:hover {
+.social-network a.icoPhone:hover {
 	background-color:#33ccff;
 }
 .social-network a.icoGoogle:hover {
@@ -65,7 +98,7 @@ ul.social-network li {
 .social-network a.icoLinkedin:hover {
 	background-color:#007bb7;
 }
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoPhone:hover i,
 .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
 	color:#fff;
 }
@@ -110,4 +143,11 @@ a.socialIcon:hover, .socialHoverClass {
 	-o-transition: all 0.8s;
 	-ms-transition: all 0.8s;
 	transition: all 0.8s;
+}
+
+h1{
+text-shadow: 0 0 24px black;}
+
+.custom-height-img{
+	height: 150px  !important;
 }
