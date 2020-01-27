@@ -11,6 +11,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+ 
+<script>
+
+ 
+function showForm() {
+  var x = document.getElementById("contactForm");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 
 
     <section id="main1"class="jumbotron jumbotron-fluid bg">
@@ -28,7 +41,7 @@
         <div class="container">
       
           <h1 class="display-3 font-weight-bold text-light" >I'm Carlos</h1>
-          <p id="ptext" class="text-justify font-weight-bold text-light">I'm Developer Full-Stack,  expert in JavaScript, html, CSS, php, SQL and other web technologies. I can help with your business.  </p>  
+          <p id="ptext" class="text-justify font-weight-bold text-light col-sm-6 ">I'm Developer Full-Stack,  expert in JavaScript, html, CSS, php, SQL and other web technologies. I can help with your business.  </p>  
          
         </div>
  
@@ -36,18 +49,46 @@
     </section>
 
     <section  class="container p-3 mb-5 ">
+
       <div class="row  d-flex justify-content-center"><h2>Contact Me</h2></div>
       <div class="row  d-flex justify-content-center ">  
         <div>
           <ul class="social-network social-circle col-sm-12 my-auto align-items-center">
             <li><a href="https://github.com/carloshernandezr" target="_blank" class="icoGit" title="GitHub"><i class="fa fa-github"></i></a></li>
             <li><a href="https://www.facebook.com/profile.php?id=100026649384044" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#" class="icoPhone" title="Phone Number"><i class="fa fa-phone"></i></a></li>
-            <li><a href="#" class="icoGoogle" title="Email me"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="tel:+18018142966" class="icoPhone" title="Call Me" ><i class="fa fa-phone"></i></a></li>
+            <li><a href="#contactForm" class="icoGoogle" title="Email me" onclick="showForm()"><i class="fa fa-envelope"></i></a></li>
             <li><a href="https://www.linkedin.com/in/carloshernandezr/" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
           </ul>
         </div>
-      </div>       
+      </div>  
+      
+      
+  <div id="contactForm">
+      <form method="post" action="">
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name">
+        </div>
+
+        <div>
+            <label for="email"> E-mail: </label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+
+
+        <div>
+            <label for="message">Message</label>
+            <textarea name="message" class="form-control" id="message" ></textarea>
+        </div>
+        <div>
+            <button type="submit" form="contactForm" class="btn btn-color mt-4 mb-5 ">Send</button>
+        </div>
+
+    </form>
+  </div>
+
     </section>
 
 
