@@ -1,5 +1,15 @@
+
+#contactForm{
+	display: none;
+}
+
+#h1Name{
+	margin-top: 115px !important;
+
+}
+
 #title2{
-   margin-top: 55px !important;
+   margin-top: 100px !important;
  }
 
 
@@ -154,3 +164,6 @@ text-shadow: 0 0 24px black;}
 .custom-height-img{
 	height: 150px  !important;
 }
+
+
+/*buuton*/ 

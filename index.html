@@ -27,25 +27,27 @@ function showForm() {
 
 
     <section id="main1"class="jumbotron jumbotron-fluid bg">
-      <div class="float"> 
-      <!-- <img src="/Assets/image/desk.jpg" class="img-circle mx-auto d-block" alt="Sample photo"> -->
-      </div>
-
-
-
-
-        <div class="container">
-            <img src="/Assets/image/me.jpg"  class="rounded-circle" alt="Cinque Terre" width="204" height="246">
-        </div>
-
-        <div class="container">
-      
-          <h1 class="display-3 font-weight-bold text-light" >I'm Carlos</h1>
-          <p id="ptext" class="text-justify font-weight-bold text-light col-sm-6 ">I'm Developer Full-Stack,  expert in JavaScript, html, CSS, php, SQL and other web technologies. I can help with your business.  </p>  
-         
-        </div>
  
-     
+        <div class="container row ">          
+
+          <div> 
+            <h1  id="h1Name" class="display-3 font-weight-bold text-light p-3 mt-5" >I'm Carlos</h1>
+          </div >
+          <div>
+            <img src="/Assets/image/me.jpg"  class="rounded-circle   align-items-end" alt="Cinque Terre" width="204" height="246">
+          </div>
+        </div>
+
+        <div class="container row">
+            <p id="ptext" class="text-justify font-weight-bold text-light col-sm-6 ">I'm Developer Full-Stack,  expert in JavaScript, html, CSS, php, SQL and other web technologies. I can help with your business.  </p>  
+        </div>
+      
+
+<div class="row ml-5">
+ <a  type="button" target="_blank"class=" button btn btn-outline-primary" href="/Assets/image/resume-carlos.pdf">Resume</a> 
+ 
+</div>
+
     </section>
 
     <section  class="container p-3 mb-5 ">
@@ -66,18 +68,14 @@ function showForm() {
       
   <div id="contactForm">
       <form method="post" action="">
-
         <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" class="form-control" id="name" name="name">
         </div>
-
         <div>
             <label for="email"> E-mail: </label>
             <input type="email" class="form-control" id="email" name="email">
         </div>
-
-
         <div>
             <label for="message">Message</label>
             <textarea name="message" class="form-control" id="message" ></textarea>
@@ -85,8 +83,7 @@ function showForm() {
         <div>
             <button type="submit" form="contactForm" class="btn btn-color mt-4 mb-5 ">Send</button>
         </div>
-
-    </form>
+      </form>
   </div>
 
     </section>
@@ -96,7 +93,6 @@ function showForm() {
       <div>
         <div id="title2" class="row d-flex justify-content-center mt-5 mb-5"><h2>My work</h2></div>
       </div>
-
 
       <div class="  row  d-flex justify-content-around  ">
 
@@ -138,15 +134,7 @@ function showForm() {
    
     </section>
 
-
-    <!-- <section  class="container p-3 mb-5">
-      <div class="row  d-flex justify-content-center"><h2> </h2></div>
-     
-      </div>       
-    </section> -->
-
-
-
+ 
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50 mt-5">
       <div class="container text-center">
         <small>Copyright &copy; Carlos Hernandez 2020 </small>
