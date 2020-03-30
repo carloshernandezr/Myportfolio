@@ -1,90 +1,261 @@
+.centerdiv {
+	margin: auto;
+	text-align: center;
+}
 
-#contactForm{
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+* {
+	box-sizing: border-box;
+}
+
+.cds {
+	background-color: #D2DBDD;
+	float: left;
+	/* display: flex;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	align-items: center; 
+	width: 100%;
+    height: 100%;
+    padding: 0;*/
+	margin: 0;
+}
+
+.cards {
+	float: left;
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	max-width: 1200px;
+	margin-bottom: 30px;
+}
+
+.card--1 .card__img, .card--1 .card__img--hover {
+	background-image: url('./image/stockg.jpg');
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+	background-image: url('./image/scrabble2.jpg');
+}
+
+.card--3 .card__img, .card--3 .card__img--hover {
+	background-image: url('./image/dayplanner.jpg');
+}
+
+.card--4 .card__img, .card--4 .card__img--hover {
+	background-image: url('./image/DPG.jpg');
+}
+
+.card--5 .card__img, .card--5 .card__img--hover {
+	background-image: url('./image/scrabble2.jpg');
+}
+
+.card--6 .card__img, .card--6 .card__img--hover {
+	background-image: url('./image/password.jpg');
+}
+
+.card__like {
+	width: 18px;
+}
+
+.card__clock {
+	width: 15px;
+	vertical-align: middle;
+	fill: #AD7D52;
+}
+
+.card__time {
+	font-size: 12px;
+	color: #AD7D52;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+.card__clock-info {
+	float: right;
+}
+
+.card__img {
+	visibility: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 235px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+.card__info-hover {
+	position: absolute;
+	padding: 16px;
+	width: 100%;
+	opacity: 0;
+	top: 0;
+}
+
+.card__img--hover {
+	transition: 0.2s all ease-out;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: absolute;
+	height: 235px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	top: 0;
+}
+
+.card {
+	margin-right: 25px;
+	transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+	background-color: #fff;
+	width: 33.3%;
+	position: relative;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+	box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+	transform: scale(1.10, 1.10);
+}
+
+.card__info {
+	z-index: 2;
+	background-color: #fff;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 2px;
+	font-weight: 500;
+	color: #868686;
+}
+
+.card__title {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.card__by {
+	font-size: 12px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+}
+
+.card__author {
+	font-weight: 600;
+	text-decoration: none;
+	color: #AD7D52;
+}
+
+.card:hover .card__img--hover {
+	height: 100%;
+	opacity: 0.3;
+}
+
+.card:hover .card__info {
+	background-color: transparent;
+	position: relative;
+}
+
+.card:hover .card__info-hover {
+	opacity: 1;
+}
+
+/****/
+
+#contactForm {
 	display: none;
 }
 
-#h1Name{
+#h1Name {
 	margin-top: 115px !important;
-
 }
 
-#title2{
-   margin-top: 100px !important;
- }
+#title2 {
+	margin-top: 100px !important;
+}
 
-
-  .bg{
-    background-image:url('../image/desk.jpg');
-    background-size: cover;
-    background-position: center;
-    /* height: 460px;
+.bg {
+	background-image: url('../image/desk.jpg');
+	background-size: cover;
+	background-position: center;
+	/* height: 460px;
     width: 100%; */
-    position: relative;
-    overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
-.bg:after{
-    content: '';
-    background-color: #fff;
-    display: block;
-    width: 120%;
-    height: 109px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    bottom: -47px;
-    transform: rotate(-4deg);
+
+.bg:after {
+	content: '';
+	background-color: #fff;
+	display: block;
+	width: 120%;
+	height: 109px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	bottom: -47px;
+	transform: rotate(-4deg);
 }
-  #main1{
-    height: 500px ;
 
-  }
-
+#main1 {
+	height: 500px;
+}
 
 /*3*/
 
-
-
-
-
-
-.bg2{
-  background-color:darkgray;
- 
-  /* //background-size: cover;
+.bg2 {
+	background-color: darkgray;
+	/* //background-size: cover;
   background-position: center; */
-  /* height: 4600px;
+	/* height: 4600px;
   width: 1100%; */
-  position: relative;
-  overflow: hidden;
-}
-.bg2:after{
-  content: '';
-  background-color: #fff;
-  display: block;
-  width: 120%;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: -90px;
-  transform: rotate(-4deg);
-}
-#main2{
-  height: 100% ;
-
+	position: relative;
+	overflow: hidden;
 }
 
+.bg2:after {
+	content: '';
+	background-color: #fff;
+	display: block;
+	width: 120%;
+	height: 150px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: -90px;
+	transform: rotate(-4deg);
+}
 
+#main2 {
+	height: 100%;
+}
 
+/* social media */
 
-
- /* social media */
- ul.social-network {
+ul.social-network {
 	list-style: none;
 	display: inline;
-	margin-left:0 !important;
+	margin-left: 0 !important;
 	padding: 0;
 }
+
 ul.social-network li {
 	display: inline;
 	margin: 0 5px;
@@ -93,45 +264,52 @@ ul.social-network li {
 .social-network a.icoGit:hover {
 	background-color: rgb(10, 5, 2);
 }
+
 .social-network a.icoFacebook:hover {
-	background-color:#3B5998;
+	background-color: #3B5998;
 }
+
 .social-network a.icoPhone:hover {
-	background-color:#33ccff;
+	background-color: #33ccff;
 }
+
 .social-network a.icoGoogle:hover {
-	background-color:#BD3518;
+	background-color: #BD3518;
 }
+
 .social-network a.icoVimeo:hover {
-	background-color:#0590B8;
+	background-color: #0590B8;
 }
+
 .social-network a.icoLinkedin:hover {
-	background-color:#007bb7;
+	background-color: #007bb7;
 }
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoPhone:hover i,
-.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
-	color:#fff;
+
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoPhone:hover i, .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color: #fff;
 }
+
 a.socialIcon:hover, .socialHoverClass {
-	color:#44BCDD;
+	color: #44BCDD;
 }
 
 .social-circle li a {
-	display:inline-block;
-	position:relative;
-	margin:0 auto 0 auto;
-	-moz-border-radius:50%;
-	-webkit-border-radius:50%;
-	border-radius:50%;
-	text-align:center;
+	display: inline-block;
+	position: relative;
+	margin: 0 auto 0 auto;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	text-align: center;
 	width: 50px;
 	height: 50px;
-	font-size:20px;
+	font-size: 20px;
 	background-color: #D3D3D3;
 }
+
 .social-circle li i {
-	margin:0;
-	line-height:50px;
+	margin: 0;
+	line-height: 50px;
 	text-align: center;
 }
 
@@ -146,6 +324,7 @@ a.socialIcon:hover, .socialHoverClass {
 	-ms-transition: all 0.2s;
 	transition: all 0.2s;
 }
+
 .social-circle i {
 	color: #fff;
 	-webkit-transition: all 0.8s;
@@ -155,15 +334,16 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.8s;
 }
 
-h1{
-text-shadow: 0 0 24px black;}
-#ptext{
+h1 {
 	text-shadow: 0 0 24px black;
 }
 
-.custom-height-img{
-	height: 150px  !important;
+#ptext {
+	text-shadow: 0 0 24px black;
 }
 
+.custom-height-img {
+	height: 150px !important;
+}
 
-/*buuton*/ 
+/*buuton*/
