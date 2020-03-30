@@ -42,7 +42,7 @@
 }
 
 .card--2 .card__img, .card--2 .card__img--hover {
-	background-image: url('./image/scrabble2.jpg');
+	background-image: url('Assets/image/scrabble2.jpg');
 }
 
 .card--3 .card__img, .card--3 .card__img--hover {
