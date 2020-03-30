@@ -46,19 +46,19 @@
 }
 
 .card--3 .card__img, .card--3 .card__img--hover {
-	background-image: url('./image/dayplanner.jpg');
+	background-image: url('image/dayplanner.jpg');
 }
 
 .card--4 .card__img, .card--4 .card__img--hover {
-	background-image: url('./image/DPG.jpg');
+	background-image: url('../image/DPG.jpg');
 }
 
 .card--5 .card__img, .card--5 .card__img--hover {
-	background-image: url('./image/scrabble2.jpg');
+	background-image: url('../assets/image/scrabble2.jpg');
 }
 
 .card--6 .card__img, .card--6 .card__img--hover {
-	background-image: url('./image/password.jpg');
+	background-image: url('/image/password.jpg');
 }
 
 .card__like {
